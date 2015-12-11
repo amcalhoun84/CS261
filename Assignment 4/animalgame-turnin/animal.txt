@@ -1,0 +1,20 @@
+Does it live in water?,10000
+Is it a mammal?,5000
+Does it climb trees?,15000
+Is it a whale?,4500
+Is it a sea turtle?,5500
+Is it a cat?,14000
+Does it eat space marines?,16000
+Is it a zergling?,15500
+Is it a dog?,16500
+Does it live in the jungle?,13500
+Is it a Monkey?,13750
+Does it like people?,16750
+Is it a Hedgehog?,16625 Does it live in the jungle?,14500
+Is it a Monkey?,14250 oes it throw spines?,15750
+Is it a Hydralisk?,15625 s it a predator?,5750
+Is it a Shark?,5625 oes it have a lot of arms?,5688
+Is it a Octopus?,5657 oes it have a beak?,5673
+Is it a Squid?,5665 s it a large feline?,14375
+Is it a Panther?,14313 oes it have stripes?,14344
+Is it a Tiger?,14329

@@ -1,0 +1,33 @@
+/* CS261- Assignment 2 - amortizedAnalysis.txt */
+/* Name: Andrew M. Calhoun
+ * Date: 10/14/2015
+ * Solution description: Evaluating execution time scenarios.
+ */
+
+
+1. How many cost units are spent in the entire process of performing 32 consecutive push operations on an empty array which starts
+out at capacity 8, assuming that the array will double in capacity each time a new item is added to an already full dynamic array? As
+N (ie. the number of pushes) grows large, under this strategy for resizing, what is the big-oh complexity for a push?
+
+We will see time cost units only when we reach capacity or the array is initiated, so, 8 + 16 + 32 = 56 total time cost units.
+
+O(1)+ will be the overall complexity for each push.
+
+2. How many cost units are spent in the entire process of performing 32 consecutive push operations on an empty array which starts out
+at capacity 8, assuming that the array will grow by a constant 2 spaces each time a new item is added to an already full dynamic
+array? As N (ie. the number of pushes) grows large, under this strategy for resizing, what is the big-oh complexity for a push?
+
+Until we reach 8, the constant will be O(1)+; however, after 8, we will require a re-upping of the the array every two steps.
+
+We will have 8 + 10 + 12 + 14 + 16 + 18 + 20 + 22 + 24 + 26 + 28 + 30 + 32 = 260 Time Cost Units.
+
+This push style will create O(n)+ complexity. 
+
+3. Suppose that a dynamic array stack doubles its capacity when it is full, and shrinks (on Pop only) its capacity by
+half when the array is half full or less. Can you devise a sequence of N push() and pop() operations which will result in poor
+performance (O(N^2) total cost)? How might you adjust the array's shrinking policy to avoid this? (Hint: You may assume that the
+initial capacity of the array is N/2.)
+
+For there to be O(N^2)+ cost, you would have to push and increase capacity with every unit added to the array, or even have it double it's size when it reaches capacity. Then immediately thereafter, you pop an item and the array is forced to reduce its capacity by half, causing there to be significant slow down.
+
+The best way to solve this, is to set the shrinking policy to minimum N/4, and preferably to N/6 or even N/8 before the capacity shrinks. 

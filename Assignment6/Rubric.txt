@@ -1,0 +1,7 @@
+Rubric for assignment 6: (Total 100 points)
+Compile and Style: 20 points
+Concordance: 20
+hash map: 50
+Written questions: 10
+ 
+Extra Credit Challenge (SpellChecker): 20

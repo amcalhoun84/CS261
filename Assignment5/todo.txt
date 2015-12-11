@@ -1,0 +1,5 @@
+0	take a nap
+0	take stupid midterm
+101	review trees for Midterm 2
+3	do assignment 5
+1	study heap-based priority queue

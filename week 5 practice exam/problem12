@@ -1,0 +1,31 @@
+struct linkedListIterator {
+struct linkedList * lst;
+struct DLink * currentLink;
+}
+
+void linkedListIteratorInit (struct linkedList *lst, 
+    struct linkedListIterator * itr) 
+{
+itr->lst = lst;
+itr->currentLink = lst->frontSentinel;
+}
+
+int linkedListIteratorHasNext (struct linkedListIterator*itr) {
+
+	if(itr->currentLink->next != itr->lst->backSentinel)
+	{
+		return 1;
+	}
+
+	else return 0;
+}
+
+TYPE linkedListIteratorNext (struct linkedListIterator *itr) {
+
+	assert(linkedListIteratorHasNext(itr));
+
+	TYPE val = itr->currentLink->value;
+
+	return val;
+
+}

@@ -1,0 +1,23 @@
+Assume you have written the binary search function that takes an array, count, and value, and returns an integer representing the location where val is either located or should be located:
+ 
+int _binarySearch(TYPE *data, int cnt, TYPE val)
+ 
+Write the contains() function for the DynArray implementation of a SortedBag that runs in O(log n) time.  You MUST make use of the _binarySearch function.  
+ 
+ 
+int containsSortedArray(struct DynArr *da, TYPE val)
+{
+ 
+	unsigned int index;
+
+ 	index = _binarySearch(da->data, da->size, val)
+
+ 	if(da->data[index] == val)
+ 	{
+ 		return 1;
+ 	}
+ 	else return 0;
+
+ 
+
+}

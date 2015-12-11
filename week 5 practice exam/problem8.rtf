@@ -1,0 +1,12 @@
+void  _printLinkedList(struct linkedList *list)
+{
+
+	struct DLink *printList = list->frontSentinel->next;
+
+	while(printList != list->backSentinel)
+	{
+		prinft("Value is: %d", printList->value);
+		printList = printList->next;
+	}
+}
+

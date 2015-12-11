@@ -1,0 +1,19 @@
+struct dynArray {
+   TYPE * data;
+   int size;
+   int capacity;
+}
+ 
+void dynArrayRemoveAt (struct DynArr * da, int index) {
+
+	unsigned int i;
+
+	assert(da != NULL);
+	assert(index < da-size);
+
+	for(i = index; i < (da->size - 1); i++)
+	{
+		da->data[i] = da->data[i+1];
+	}
+
+	da->size--;
